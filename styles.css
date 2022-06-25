@@ -45,7 +45,6 @@ section {
   background-color: var(--grey);
   display: flex;
   justify-content: center;
-  justify-content: center;
   align-items: center;
 }
 .box {
@@ -53,7 +52,7 @@ section {
 }
 h1 {
   font-size: 3rem;
-  color: --var(--white);
+  color: var(--white);
   text-align: center;
   margin-bottom: 1rem;
 }
