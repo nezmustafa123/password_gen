@@ -96,4 +96,25 @@ h1 {
   outline: none;
   border: none;
   border-radius: 3px 0 0 0;
+  font-size: 1.4rem;
+}
+
+.p-header button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+#submit {
+  width: 100%;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  background-color: var(--color-sec);
+  color: var(--white);
+  outline: none;
+  border: none;
+  border-radius: 3px;
 }
