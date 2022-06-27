@@ -11,3 +11,7 @@ const pLength = document.getElementById("p-length"),
   pSymbol = document.getElementById("p-symbol"),
   submit = document.getElementById("submit"),
   password = document.getElementById("password");
+
+submit.addEventListener("click", () => {
+  let initialPassword = empty; //set to empty variable
+});
