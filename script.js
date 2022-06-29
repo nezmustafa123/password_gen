@@ -20,4 +20,6 @@ submit.addEventListener("click", () => {
   lowerCase.checked ? (initialPassword += lCase) : "";
   pNumber.checked ? (initialPassword += number) : "";
   pSymbol.checked ? (initialPassword += symbol) : "";
+
+  password.value = generatePassword(pLength.value); //call function
 });
