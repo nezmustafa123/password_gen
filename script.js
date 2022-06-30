@@ -21,5 +21,14 @@ submit.addEventListener("click", () => {
   pNumber.checked ? (initialPassword += number) : "";
   pSymbol.checked ? (initialPassword += symbol) : "";
 
-  password.value = generatePassword(pLength.value); //call function
+  password.value = generatePassword(pLength.value, initialPassword); //call function
 });
+
+
+function.generatePassword(l, initialPassword) {
+  let pass = '';
+  for(let i = 0; i < l; i++) {
+   pass += initialPassword.charAt() //character at certain index
+  }
+}
+
