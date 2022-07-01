@@ -22,13 +22,19 @@ submit.addEventListener("click", () => {
   pSymbol.checked ? (initialPassword += symbol) : "";
 
   password.value = generatePassword(pLength.value, initialPassword); //call function
+
+  console.log(password.value);
 });
 
+function generatePassword(l, initialPassword) {
+  let pass = "";
+  for (let i = 0; i < l; i++) {
+    pass += initialPassword.charAt(
+      Math.floor(Math.random() * initialPassword.length)
+    );
+    //get random charachters fromo the initial password
 
-function.generatePassword(l, initialPassword) {
-  let pass = '';
-  for(let i = 0; i < l; i++) {
-   pass += initialPassword.charAt() //character at certain index
+    //character at certain index
   }
+  return pass;
 }
-
