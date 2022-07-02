@@ -10,7 +10,8 @@ const pLength = document.getElementById("p-length"),
   pNumber = document.getElementById("p-number"),
   pSymbol = document.getElementById("p-symbol"),
   submit = document.getElementById("submit"),
-  password = document.getElementById("password");
+  password = document.getElementById("password"),
+  copy = document.getElementById("copy"); //copy button
 
 submit.addEventListener("click", () => {
   let initialPassword = empty; //set to empty variable
@@ -38,3 +39,15 @@ function generatePassword(l, initialPassword) {
   }
   return pass;
 }
+
+//copy function
+
+copy.addEventListener("click", () => {
+  if (password.value == "") {
+    alert("Please generate a password");
+  } else {
+    password.select();
+    document.execCommand("copy");
+    alert("password has been copied to clipboard ");
+  }
+});
